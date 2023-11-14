@@ -1,0 +1,34 @@
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+:root {
+  --accent-color: #ff0070;
+  --title-decor: #db00ff;
+  --font-IBM: "IBM Plex mono", sans-serif;
+  --color-text-content: #f1b2ce;
+  --title-text: #000028;
+  --font-size: 18px;
+  --font-wl: 400;
+  --font-wb: 700;
+  --bg-color: #000028;
+}
+
+/* Остальные стили */
+
+.page.theme_dark {
+  /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
+  --accent-color: #ff0070;
+  --title-decor: #db00ff;
+  --font-IBM: "IBM Plex mono", sans-serif;
+  --color-text-content: #f1b2ce;
+  --title-text: #000028;
+  --font-size: 18px;
+  --font-wl: 400;
+  --font-wb: 700;
+  --bg-color: #000028;
+}
