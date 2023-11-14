@@ -7,30 +7,39 @@
   --accent-color: #ffc2e6;
   --title-decor: #ff8dcb;
   --text-shadow: #ff0070;
-  --font-IBM: "IBM Plex mono", sans-serif;
+  --font-IBM: "IBM Plex mono", monospace;
   --color-text-content: #353430;
   --title-text: #353430;
-  --bg-title: --font-size: 18px;
-  --font-wl: 400;
-  --font-wb: 700;
+  --bg-title: #fff1f7;
+  /* --font-wl: 400;
+  --font-wb: 700; */
   --bg-color: #fff1f7;
 }
 
 /* Остальные стили */
-
+/* @media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #ffc2e6;
+    --title-decor: #ff8dcb;
+    --text-shadow: #ff0070;
+    --color-text-content: #353430;
+    --title-text: #353430;
+    --bg-color: #fff1f7;
+    
+    --accent-color: var(--color-text);
+  }
+} */
 @media (prefers-color-scheme: light) {
   :root {
     /* Дублируем переменные светлой темы */
     --accent-color: #ffc2e6;
     --title-decor: #ff8dcb;
     --text-shadow: #ff0070;
-    --font-IBM: "IBM Plex mono", sans-serif;
+    --font-IBM: "IBM Plex mono", monospace;
     --color-text-content: #353430;
     --title-text: #353430;
-    --font-size: 18px;
-    --font-wl: 400;
-    --font-wb: 700;
     --bg-color: #fff1f7;
+    background-image: url(../images/cover-image-light.png);
   }
   .page.theme_light .rec {
     display: none;

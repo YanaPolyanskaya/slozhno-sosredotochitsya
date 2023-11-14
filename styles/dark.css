@@ -6,7 +6,7 @@
 :root {
   --accent-color: #ff0070;
   --title-decor: #db00ff;
-  --font-IBM: "IBM Plex mono", sans-serif;
+  --font-IBM: "IBM Plex mono", monospace;
   --color-text-content: #f1b2ce;
   --title-text: #000028;
   --font-size: 18px;
@@ -15,6 +15,18 @@
   --bg-color: #000028;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #ff0070;
+    --title-decor: #db00ff;
+    --color-text-content: #f1b2ce;
+    --title-text: #000028;
+    /* --font-size: 18px;
+    --font-wl: 400;
+    --font-wb: 700; */
+    --bg-color: #000028;
+  }
+}
 /* Остальные стили */
 
 .page.theme_dark {
@@ -24,11 +36,11 @@
   */
   --accent-color: #ff0070;
   --title-decor: #db00ff;
-  --font-IBM: "IBM Plex mono", sans-serif;
+  --font-IBM: "IBM Plex mono", monospace;
   --color-text-content: #f1b2ce;
   --title-text: #000028;
-  --font-size: 18px;
+  /* --font-size: 18px;
   --font-wl: 400;
-  --font-wb: 700;
+  --font-wb: 700; */
   --bg-color: #000028;
 }
